@@ -1,0 +1,19 @@
+<% content_for :title do %>
+  Editing Doctor
+<% end %>
+
+<div class="page-header">
+  <h1>Editing Doctor</h1>
+  <div>
+    <%= link_to @doctor, class: 'btn btn-info' do %>
+      <%= icon 'fas', 'eye' %>
+      Show
+    <% end %>
+    <%= link_to doctors_path, class: 'btn btn-outline-secondary' do %>
+      <%= icon 'fas', 'bars' %>
+      Back
+    <% end %>
+  </div>
+</div>
+
+<%= render 'form' %>

@@ -1,0 +1,23 @@
+<% content_for :title do %>
+  Details of Doctor
+<% end %>
+
+<div class="page-header">
+  <h1>Details of Doctor</h1>
+  <div>
+    <%= link_to edit_doctor_path(@doctor), class: 'btn btn-success' do %>
+      <%= icon 'fas', 'edit' %>
+      Edit
+    <% end %>
+    <%= link_to doctors_path, class: 'btn btn-outline-secondary' do %>
+      <%= icon 'fas', 'bars' %>
+      Back
+    <% end %>
+  </div>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @doctor.name %></dd>
+
+</dl>
