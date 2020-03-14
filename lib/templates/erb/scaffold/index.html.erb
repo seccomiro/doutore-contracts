@@ -34,7 +34,7 @@
             <%%= link_to edit_<%= singular_table_name %>_path(<%= singular_table_name %>), class: 'btn btn-success btn-sm' do %>
               <%%= icon 'fas', 'edit', class: 'fa-fw' %>
             <%% end %>
-            <%%= link_to <%= singular_table_name %>, method: :delete, data: { confirm: 'Você tem certeza?' }, class: 'btn btn-danger btn-sm' do %>
+            <%%= link_to <%= singular_table_name %>, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' do %>
               <%%= icon 'fas', 'times', class: 'fa-fw' %>
             <%% end %>
           </td>
