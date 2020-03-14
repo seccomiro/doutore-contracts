@@ -17,7 +17,6 @@
         <th>Title</th>
         <th>Clinic</th>
         <th>Doctor</th>
-        <th>Content</th>
         <th></th>
       </tr>
     </thead>
@@ -28,9 +27,8 @@
           <td><%= contract.title %></td>
           <td><%= contract.clinic %></td>
           <td><%= contract.doctor %></td>
-          <td><%= contract.content %></td>
           <td>
-            <%= link_to contract_path(contract, format: :pdf), class: 'btn btn-info btn-sm' do %>
+            <%= link_to contract_path(contract, format: :pdf), target: "_blank", class: 'btn btn-info btn-sm' do %>
               <%= icon 'fas', 'file-pdf', class: 'fa-fw' %>
             <% end %>
             <%= link_to edit_contract_path(contract), class: 'btn btn-success btn-sm' do %>
