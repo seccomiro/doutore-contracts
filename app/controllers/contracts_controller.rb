@@ -1,5 +1,6 @@
 class ContractsController < ApplicationController
   before_action :set_contract, only: [:show, :edit, :update, :destroy]
+  before_action :set_pdf_header, only: [:show]
 
   # GET /contracts
   # GET /contracts.json
