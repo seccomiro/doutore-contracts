@@ -1,0 +1,13 @@
+<% content_for :title do %>
+  New Clinic
+<% end %>
+
+<div class="page-header">
+  <h1>New Clinic</h1>
+  <%= link_to clinics_path, class: 'btn btn-outline-secondary' do %>
+    <%= icon 'fas', 'bars' %>
+    Back
+  <% end %>
+</div>
+
+<%= render 'form' %>
